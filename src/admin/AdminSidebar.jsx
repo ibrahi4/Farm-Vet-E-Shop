@@ -9,7 +9,6 @@ import {
 import { createPortal } from "react-dom";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
-/** Tooltip يظهر فوق العناصر لما الـ Sidebar تكون Collapsed */
 function PortalTooltip({ open, label, x, y, onClose }) {
   useEffect(() => {
     if (!open) return;

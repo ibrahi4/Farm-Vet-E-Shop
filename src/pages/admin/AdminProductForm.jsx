@@ -56,7 +56,7 @@ export default function AdminProductForm() {
       <button
         type="submit"
         form="productForm"
-        className="rounded-lg bg-[#49BBBD] px-3 py-2 text-sm font-semibold text-white hover:bg-[#2F7E80]"
+        className="rounded-lg bg-[#26b004] px-3 py-2 text-sm font-semibold text-white hover:bg-[#4aac4f]"
       >
         {isEdit ? "Save Changes" : "Add Product"}
       </button>
@@ -109,7 +109,7 @@ export default function AdminProductForm() {
                   </label>
                   <Field
                     name="title"
-                    className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-[#49BBBD] focus:outline-none"
+                    className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-[#17a219] focus:outline-none"
                   />
                   <ErrorMessage
                     name="title"
@@ -126,7 +126,7 @@ export default function AdminProductForm() {
                     as="textarea"
                     name="description"
                     rows={4}
-                    className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-[#49BBBD] focus:outline-none"
+                    className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-[#218b13] focus:outline-none"
                   />
                   <ErrorMessage
                     name="description"
@@ -142,7 +142,7 @@ export default function AdminProductForm() {
                     </label>
                     <Field
                       name="thumbnailUrl"
-                      className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-[#49BBBD] focus:outline-none"
+                      className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-[#119b24] focus:outline-none"
                     />
                     <ErrorMessage
                       name="thumbnailUrl"
@@ -168,7 +168,7 @@ export default function AdminProductForm() {
                     <Field
                       as="select"
                       name="categoryId"
-                      className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-[#49BBBD] focus:outline-none"
+                      className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-[#0ba126] focus:outline-none"
                     >
                       <option value="">Select…</option>
                       {categories.map((c) => (
@@ -193,7 +193,7 @@ export default function AdminProductForm() {
                     <Field
                       name="price"
                       type="number"
-                      className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-[#49BBBD] focus:outline-none"
+                      className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-[#18a02a] focus:outline-none"
                     />
                     <ErrorMessage
                       name="price"
@@ -209,7 +209,7 @@ export default function AdminProductForm() {
                     <Field
                       as="select"
                       name="currency"
-                      className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-[#49BBBD] focus:outline-none"
+                      className="w-full rounded-lg border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-[#279b1a] focus:outline-none"
                     >
                       <option value="USD">USD</option>
                       <option value="EGP">EGP</option>
