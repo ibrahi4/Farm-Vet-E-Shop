@@ -8,6 +8,16 @@
   --color-mint-500: oklch(0.72 0.11 178);
 }
 
+@keyframes fade-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in {
+  animation: fade-in .25s ease-out;
+}
+
+
 .fontsStats {
   font-family: "Buenos Aires Trial", sans-serif;
   font-weight: 200;
