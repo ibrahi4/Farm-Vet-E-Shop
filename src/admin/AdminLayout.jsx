@@ -20,7 +20,9 @@ export default function AdminLayout() {
   useEffect(() => {
     try {
       localStorage.setItem(LS_KEY, collapsed ? "1" : "0");
-    } catch {}
+    } catch (error) {
+      console.error("Failed to save sidebar state:", error);
+    }
   }, [collapsed]);
 
   // ✅ إغلاق الـ Drawer بالموبايل لما تضغط Esc
