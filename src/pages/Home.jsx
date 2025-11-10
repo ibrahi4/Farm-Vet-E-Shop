@@ -1,7 +1,13 @@
-import React from "react";
+import Navbar from "./Navbar";
 
-function Home() {
-  return <div>Home</div>;
+export default function Home() {
+  return (
+    <div>
+      <Navbar />
+      <div style={{ padding: "20px" }}>
+        <h1>Welcome to GreenMarket 🌱</h1>
+        <p>هنا الصفحة الرئيسية العامة لكل المستخدمين.</p>
+      </div>
+    </div>
+  );
 }
-
-export default Home;
